@@ -6,12 +6,20 @@ export const usersRoutes: Routes = [
     component: UsersComponent,
     children: [
       {
+        path: 'home',
+        loadChildren: () =>
+          import('./pages/home/home.routes').then(
+            (m) => m.homeRoutes
+          ),
+      },
+      {
         path: 'newArrival',
         loadChildren: () =>
           import('./pages/new-arrival/new-arrival.routes').then(
             (m) => m.newArrivalRoutes
           ),
       },
+
     ],
   },
 ];

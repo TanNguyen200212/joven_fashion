@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 export const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/users/newArrival',
+    redirectTo: '/users/home',
     pathMatch: 'full',
   },
 

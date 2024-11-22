@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HeaderUsComponent } from '../core/layout/header-us/header-us.component';
 import { FooterUsComponent } from '../core/layout/footer-us/footer-us.component';
-import { NewArrivalComponent } from "./pages/new-arrival/new-arrival.component";
+import { CareusolComponent } from "../core/layout/careusol/careusol.component";
+import { HomeComponent } from "./pages/home/home.component";
 
 @Component({
   selector: 'app-users',
@@ -13,7 +14,8 @@ import { NewArrivalComponent } from "./pages/new-arrival/new-arrival.component";
     RouterModule,
     HeaderUsComponent,
     FooterUsComponent,
-    NewArrivalComponent
+    CareusolComponent,
+    HomeComponent
 ],
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css']
